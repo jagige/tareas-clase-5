@@ -5,7 +5,7 @@ for(let i =0; i<$numerosEnLi.length; i++){
     arrayDeNumerosEnLi.push(parseInt($numerosEnLi[i].innerText));
 }
 
-function promedioArray(numeros){
+function CalcularPromedio(numeros){
     let resultado = 0;
     for(let i =0; i < numeros.length; i++){
       resultado = resultado + numeros[i]
@@ -13,7 +13,7 @@ function promedioArray(numeros){
     return resultado/numeros.length;
 }
 
-console.log("El promedio es: "+ promedioArray(arrayDeNumerosEnLi));
+console.log("El promedio es: "+ CalcularPromedio(arrayDeNumerosEnLi));
 console.log("El número más pequeño es: "+Math.min(...arrayDeNumerosEnLi));
 console.log("El número más grande es: "+Math.max(...arrayDeNumerosEnLi));
 
@@ -45,7 +45,7 @@ for(let i =0; i<vecesRepetidas.length; i++){
 
 console.log("El número más frecuente es el "+ numeroMasRepetido + ", que se repite " +valorMaximo+ " veces");
 
-document.querySelector("#promedio").innerText = "El promedio es: "+ promedioArray(arrayDeNumerosEnLi);
+document.querySelector("#promedio").innerText = "El promedio es: "+ CalcularPromedio(arrayDeNumerosEnLi);
 document.querySelector("#numeroMasChico").innerText = "El número más pequeño es: "+Math.min(...arrayDeNumerosEnLi);
 document.querySelector("#numeroMasGrande").innerText = "El número más grande es: "+Math.max(...arrayDeNumerosEnLi);
 document.querySelector("#numeroMasFrecuente").innerText = "El número más frecuente es el "+ numeroMasRepetido + ", que se repite " +valorMaximo+ " veces";

@@ -17,12 +17,12 @@ for(let i=0; i<$segundos.length; i++){
 
 let resultadoSumaSegundos =0;
 
-// Sumo todos los números del arraySegundos y al total lo divido en 60 para saber cuántos minutos tengo
+// Sumo todos los numeros del arraySegundos y al total lo divido en 60 para saber cuantos minutos tengo
 for(let i=0; i<arraySegundos.length; i++){
   resultadoSumaSegundos = resultadoSumaSegundos + arraySegundos[i]/60
 }
 
-let segundosEnteros = Math.floor(resultadoSumaSegundos);// separo los minutos obtenidos
+let segundosEnteros = Math.floor(resultadoSumaSegundos);// separo los minutos otenidos
 let segundosDecimales = Math.trunc((resultadoSumaSegundos - segundosEnteros)*100);//dejo solo los segundos restantes y multiplico por 100 par que qeude un numero entero a mostrar
 arrayMinutos.push(segundosEnteros);// agrego los minutos al array correspondiente
 

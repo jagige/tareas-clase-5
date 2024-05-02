@@ -7,8 +7,8 @@ $botonEnviar.onclick = function(){
   let $apellido = document.querySelector("#apellido").value;
   let $edad = document.querySelector("#edad").value;
 
-  let $informacion =  `${$primerNombre} ${$segundoNombre} ${$apellido} ${$edad}`
-  document.querySelector("#informacion").value = $informacion
+  let informacion =  `${$primerNombre} ${$segundoNombre} ${$apellido} ${$edad}`
+  document.querySelector("#informacion").value = informacion
   document.querySelector("h1").innerText = `Bienvenido/a ${$primerNombre}!`
   
   return false;
